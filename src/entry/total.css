@@ -1,0 +1,17 @@
+.col{
+    width: 14.2%;
+    height: auto;
+    text-align: center;
+    min-height: 50px;
+    position: relative;
+}
+.kaoqin-week-title{
+    display: flex;
+    display: -webkit-flex;
+}
+.kaoqin-week-day-title {
+    padding-top: 15px;
+}
+.kaoqin-month-pre{
+
+}

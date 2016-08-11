@@ -1,3 +1,3 @@
-# hello
-my first repository
-I love :money
+这是前端项目通用的前端 master分支
+
+
