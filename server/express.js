@@ -17,6 +17,7 @@ module.exports = function () {
     app.use('/assets', express.static(ASSETS_DIR));
 
     app.get("/", function (req, res) {
+
         res.sendFile(__dirname + '/index.html');
     });
 
