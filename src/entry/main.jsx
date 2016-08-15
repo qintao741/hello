@@ -3,8 +3,6 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { Router, Route, Redirect } from 'react-router';
-import './total.css';
-import "./main.less";
 
 import createHashHistory from 'history/lib/createHashHistory';
 import configureStore from './store/configureStore';
@@ -30,4 +28,3 @@ class Main extends Component {
 }
 
 ReactDOM.render(<Main />, document.getElementById('root'));
-

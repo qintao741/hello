@@ -1,6 +1,6 @@
 {
-  "name": "common-static",
-  "description": "common-static",
+  "name": "site",
+  "description": "site",
   "version": "0.0.1",
   "scripts": {
     "dist:webpack-alpha": "NODE_ENV=production webpack --config config/webpack.dev.js",
@@ -40,6 +40,7 @@
     "webpack-hot-middleware": "^2.6.0"
   },
   "dependencies": {
+    "amazeui-react": "^1.2.2",
     "axios": "^0.8.1",
     "babel-preset-react": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",

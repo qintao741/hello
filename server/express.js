@@ -30,7 +30,7 @@ module.exports = function () {
 
     require('./api')(app);
 
-    var APP_PORT = 3001;
+    var APP_PORT = 8080;
     app.listen(APP_PORT, function (error) {
         if (error) {
             console.error(error);

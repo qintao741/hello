@@ -1,11 +1,7 @@
-
-
-
 module.exports = function (app) {
     app.get('/entry/ManageAssessmentProgram/getAllPrograms',(req,res)=> {
         res.json(require('./AllPrograms.json'))
-    });
-
+})
     app.get('/entry/surveyBase/getAllQuestionNaires',(req,res)=>
     {res.json(require('./AllQuestionNaires.json'))})
 
@@ -55,37 +51,32 @@ module.exports = function (app) {
 
     app.get("/Assessor/init*",(req,res)=>{
         res.json(require('./AssessorInit.json'));
-    });
+})
     app.get("/Assessor/search*",(req,res)=>{
         res.json(require('./AssessorSearch.json'));
-    });
+})
     app.get("/Assessor/approveInit*",(req,res)=>{
         res.json(require('./AssessorInit.json'));
-    });
- app.get("/entry/evaluation/init/*",(req,res)=>{
+})
+    app.get("/entry/evaluation/init/*",(req,res)=>{
         res.json(require('./evaluationInit.json'));
-    });
- app.get("/entry/surveyBase/init*",(req,res)=>{
+})
+    app.get("/entry/surveyBase/init*",(req,res)=>{
         res.json(require('./initQuestionnaire.json'));
-    });
-
- app.get("/entry/surveyBase/getDimensions",(req,res)=>{
+})
+    app.get("/entry/surveyBase/getDimensions",(req,res)=>{
         res.json(require('./initDimesionList.json'));
-    });
-
-
+})
     app.post("/surveyBase/submit",(req,res)=>{
         res.json(require('./initQuestionnaire.json'));
-    });
-  app.post("/entry/saveEvaluation/*",(req,res)=>{
+})
+    app.post("/entry/saveEvaluation/*",(req,res)=>{
         res.json(require('./initQuestionnaire.json'));
-    });
+})
     app.get("/entry/report/getReportResult*",(req,res)=>{
         res.json(require('./tsconfig.json'));
-    });
-app.get("/entry/ManageAssessmentProgram/calcEvaluationProgram/*",(req,res)=>{
+})
+    app.get("/entry/ManageAssessmentProgram/calcEvaluationProgram/*",(req,res)=>{
         res.json(require('./CalcEvaluationProgram.json'));
-    });
-
-
-};
+})
+};;;;

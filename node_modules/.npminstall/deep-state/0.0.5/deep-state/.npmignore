@@ -1,0 +1,8 @@
+.DS_Store
+.idea/
+npm-debug.log
+node_modules/
+
+.gitignore
+src/
+webpack.config.js
