@@ -21,15 +21,6 @@ module.exports = function () {
         res.sendFile(__dirname + '/index.html');
     });
 
-    app.get("/app", function (req, res) {
-        res.sendFile(__dirname + '/app.html');
-    });
-    app.get("/report", function (req, res) {
-        res.sendFile(__dirname + '/report.html');
-    });
-
-    require('./api')(app);
-
     var APP_PORT = 8080;
     app.listen(APP_PORT, function (error) {
         if (error) {

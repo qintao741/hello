@@ -6,7 +6,6 @@ import { Router, Route, Redirect } from 'react-router';
 
 import createHashHistory from 'history/lib/createHashHistory';
 import configureStore from './store/configureStore';
-import BarContainer from "./pages/Bar/BarContainer";
 import textContainer from "./pages/textContainer";
 
 const history = createHashHistory();
@@ -17,7 +16,6 @@ class Main extends Component {
         return (
             <Provider store={store}>
                 <Router history={history} >
-                    <Route component={BarContainer} path="/Bar" />
                     <Route component={textContainer} path="/" />
 
                     <Redirect from="/" to="/" />
