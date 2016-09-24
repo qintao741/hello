@@ -6,7 +6,7 @@ var webpackHotMiddleware = require('webpack-hot-middleware');
 var webpackDevConfig = require('../config/webpack.dev');
 
 var ASSETS_DIR = path.join(__dirname, '..', 'assets');
-
+console.log(__dirname);
 module.exports = function () {
     var app = new express();
 
